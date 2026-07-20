@@ -10,9 +10,10 @@ public class javaVariables {
         //Declaring (Creating) Variables
         String name = "Hari";
         System.out.println(name);
+
+        //Java can overwrite the value of a variable hence final is used to avoid overwrite
+        final int myNum = 15;
+        myNum = 20;  // will generate an error: cannot assign a value to a final variable
     }
 }
 
-//Java can overwrite the value of a variable hence final is used to avoid overwrite
-final int myNum = 15;
-myNum = 20;  // will generate an error: cannot assign a value to a final variable
