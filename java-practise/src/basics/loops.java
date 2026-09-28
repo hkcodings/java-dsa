@@ -94,5 +94,25 @@ public class loops {
         }
         System.out.print("odd Sum: " + oddSum);
 
+        // ------------------------------- Break Statements ---------------------------------- //
+
+        Scanner sc1 = new Scanner(System.in);
+
+        int numSum = 0;
+        int count3 = 0;
+
+        while(true) {
+            System.out.print("Enter a number repeatedly:");
+            int number = sc1.nextInt();
+
+            if (number <= 0) {
+                break;
+            }
+            count3++;
+            numSum += number;
+        }
+        System.out.println("Total numbers entered: " + count3);
+        System.out.println("Sum: " + numSum);
+
     }
 }
